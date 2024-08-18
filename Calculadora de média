@@ -1,0 +1,6 @@
+#Calculadora de Média
+nota_1 = float(input("Digite sua a 1 nota.")) #Variável recebe valor decimal.
+nota_2 = float(input("Digite sua 2 nota."))
+
+media =(nota_1+nota_2)/2
+print(f"Sua media e: {media:.2f}") #F-String: A f-string é uma maneira de formatar strings em Python, introduzida no Python 3.6. Para usá-la, você coloca um f antes das aspas de uma string e inclui expressões Python dentro de chaves {}.
