@@ -1,0 +1,90 @@
+#Python Avançado
+#Classes e Objetos
+#No python tudo é objeto , Uma Class nos ajuda a criar objetos.
+class classNone:
+    altura=1,84 #Corpo da classe (declaração)
+
+class Pessoa:
+    primeiroNome = "Gabriel"
+    sobrenome = "Pires"
+    idade = 35 
+
+#Instanciando uma Classe
+#Podemos criar um objeto de uma classe pelo instaciamento. Basta adicionar () após o nome da classe.
+objeto= Pessoa()
+#Acessando as propriedades de um objeto.
+print(objeto.primeiroNome)
+print(objeto.sobrenome)
+print(objeto.idade)
+
+#Atributos de Classe
+#Atributos de classe são atributos que são compartilhados por todos os objetos de uma classe.
+class Estudante:
+    def __init__(self,id_number ,nome ,idade):
+        self.id_number = id_number
+        self.nome = nome
+        self.idade = idade
+
+#Uma instância é simplesmente o objeto criado a partir de uma classe.
+Estudante1 = Estudante(1,"Gabriel",35) #Estudante1 é uma instância da classe Estudante.
+
+#Acessar as propriedades da instancia (objeto).
+x=Estudante1.id_number #Acessando a propriedade id_number do objeto Estudante1.
+y=Estudante1.nome
+z=Estudante1.idade
+    
+# O parametro self permite acessar os atributos e métodos de uma classe.
+#O __init__ e uma função que nos permite fornecer valores iniciais para os atributos de uma classe.
+#O __init__ e chamado de construtor de uma classe.
+
+#Instancias são únicas.
+#Digamos que tenha 500 estudantes, e precisa gerenciar seus dados. Não é eficiente criar 500 variáveis para cada estudante.
+#Ao inves disso, podemos criar instancias unicas para uma classe.
+#Ex: Estudante1 e Estudante2 são diferentes um do outro.
+class Estudante:
+    def __init__(self,id_number ,nome ,idade):
+        self.id_number = id_number
+        self.nome = nome
+        self.idade = idade
+
+Estudante1 = Estudante(1,"Gabriel",35)
+Estudante2 = Estudante(2,"Gabriela",30)
+
+print("Id do Estudante1:",Estudante1.id_number)
+print("Nome do Estudante1:",Estudante1.nome)    
+print("Idade do Estudante1:",Estudante1.idade)
+print("_____________________________________")
+print("Id do Estudante2:",Estudante2.id_number)
+print("Nome do Estudante2:",Estudante2.nome)
+print("Idade do Estudante2:",Estudante2.idade)
+
+#Métodos
+#Métodos são funções que acessam atributos de uma classe.
+#Métodos devem ser definidos (criados) dentro de uma classe.
+class Estudante:
+    def __init__(self,id_number ,nome ,idade):
+        self.id_number = id_number  #Atributo
+        self.nome = nome  #Atributo
+        self.idade = idade
+        #Método
+    def detalhes(self): #O parametro self permite acessar os atributos e métodos de uma classe.
+        print("Id do Estudante:",self.id_number)
+
+Estudante1 = Estudante(1,"Gabriel",35)
+Estudante1.greet_detalhes() #Aqui estamos chamando o método detalhes() da classe Estudante.
+
+#Passar argumentos para um método
+class Estudante:
+    def __init__(self,id_number ,nome ,idade):
+        self.id_number = id_number  #Atributo
+        self.nome = nome
+        self.idade = idade
+        #Método
+    def detalhes(self,boasVindas): #O parametro self permite acessar os atributos e métodos de uma classe.
+        print("Olá" + self.nome + "!" + boasVindas)
+
+Estudante1 = Estudante(1,"Gabriel",35) #Estudante1 é uma instância da classe Estudante.
+Estudante1.detalhes("Bem vindo a aula de Python!") #Aqui estamos chamando o método detalhes() da classe Estudante. boasVindas é um argumento.
+
+#Herança Python
+    
