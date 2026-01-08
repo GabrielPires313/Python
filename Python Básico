@@ -1,0 +1,46 @@
+#Básico
+#Declaração de variáveis
+x = 4 
+y = 3
+sum = x + y
+print(sum)
+
+#Funcionalidades de Python
+# Web Development.
+# Machine Learning.
+# Data Science.
+# Scripting
+# Automation
+
+print ("Olá Python.") # Imprime a mensagem "Olá Python" na tela.
+print (91) # Imprime o número 91
+print (3 + 21) # Imprime a soma de 3 e 21.
+print ("Olá Python", "vamos aprender") # Imprime a mensagem "Olá Python vamos aprender" na tela.
+
+x=4
+y=3
+sum=x+y
+print("A soma de",x,"e",y,"é",sum) # Imprime a mensagem "A soma de 4 e 3 é 7" na tela.
+
+#Declaração de variáveis
+x = 4
+y = 3
+print(x+y) #Imprime a soma de x e y.
+#ou
+x=4; y=3; print(x+y) #Imprime a soma de x e y.
+
+frutas={ # Uma declaracao em varias linhas.
+    "maçã",
+    "laranja",
+    "banana",
+}
+print (frutas) #Imprime as frutas.
+
+#Identação
+if 5>4:
+    x="5 é maior que 4."
+    print(x) #Imprime a mensagem "5 é maior que 4."
+    print("Fim do bloco.")
+print("Eu venho depois do bloco if.")
+
+
