@@ -1,0 +1,50 @@
+#Variáveis
+#São usadas para armazenar valores. (=)
+fruta = "maçã" #A variável fruta armazena o valor "maçã".
+peso = 3.56 #A variável peso armazena o valor 3.56.
+
+#Regras para nomear variáveis:
+#Deve começar com uma letra ou um sublinhado (_).
+#Não pode começar com um número.
+#Uma variável é case-sensitive, ou seja, é diferente de "nome" e "Nome".
+#Só pode conter letras, números e sublinhados.
+meunome = "Gabriel"
+meu_nome = "Gabriel"
+_meunome = "Gabriel"
+meunome1 = "Gabriel"
+meuNome="Gabriel"
+
+#Nomes lomgos.
+minha_fruta_favorita = "maçã"
+minhaFrutaFavorita = "maçã"
+
+#Tipos de dados
+#Números 
+x = 5 #Inteiro
+y = 3.56 #Ponto flutuante (float)
+
+x=5
+y=3.56
+print(x+y) #Add números.
+
+#Strings
+nome = "Gabriel"
+print(nome) #Imprime a string "Gabriel".
+x='Te disse "Pyrhon é fácil" ontem.' #Use aspas simples para strings possuem aspas duplas.
+x="Vamos 'aprender' Python." #Use aspas duplas para strings possuem aspas simples.
+
+#Booleanos
+bool=True
+print(bool) #Imprime True.
+bool=False
+print(bool) #Imprime False.
+
+if 5>4:
+    x=True
+else:
+    x=False
+
+#Listas
+frutas = ["maçã", "banana", "laranja"] #Uma lista é uma coleção de itens em uma ordem específica[0, 1, 2].
+
+#Tipos de Números
